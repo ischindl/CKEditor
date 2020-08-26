@@ -25,18 +25,18 @@ import com.vaadin.annotations.JavaScript;
  * Example version of CKEditorTextField that loads ckeditor js-library from ckeditor.com. Remember that you need to
  * have suitable license to use CKEditor. http://ckeditor.com/pricing
  */
-@JavaScript({"../../webjars/ckeditor/4.14.0/standard/ckeditor.js", "vaadin-save-plugin.js"})
-public class CKEditorTextField extends AbstractCKEditorTextField {
+@JavaScript({"../../webjars/ckeditor/4.14.0/full/ckeditor.js", "vaadin-save-plugin.js"})
+public class CKEditorFullTextField extends AbstractCKEditorTextField {
 
-    public CKEditorTextField() {
+    public CKEditorFullTextField() {
         super();
     }
 
-    public CKEditorTextField(CKEditorConfig config) {
+    public CKEditorFullTextField(CKEditorConfig config) {
         super(config);
     }
 
-    public CKEditorTextField(CKEditorConfig config, String initialValue) {
+    public CKEditorFullTextField(CKEditorConfig config, String initialValue) {
         super(config, initialValue);
     }
 }
